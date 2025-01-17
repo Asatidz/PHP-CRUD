@@ -3,7 +3,7 @@
     <fieldset style="width:30%">
         <legend>Tambah siswa</legend>
         <p>Nama</p>
-        <input type="text" name:"nama" id:"nama" required>
+        <input type="text" name="nama" id="nama" required>
         <p>Kelas</p>
         <select name="kelas" id="kelas" required>
 
