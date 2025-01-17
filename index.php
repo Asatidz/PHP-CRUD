@@ -61,9 +61,9 @@ $no++;
     }
     .tambah{
         background:blue;
-        color;white;
+        color:white;
         padding:3px;
-        font:weight:bold;
+        font-weight:bold;
     }
     .tombol1{
         color:black;
