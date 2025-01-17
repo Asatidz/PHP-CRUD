@@ -1,5 +1,5 @@
 <title>Tambah Siswa</title>
-<form action="" method="post">
+<form action="tambah-proses.php" method="post">
     <fieldset style="width:30%">
         <legend>Tambah siswa</legend>
         <p>Nama</p>
