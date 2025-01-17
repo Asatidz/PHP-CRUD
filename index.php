@@ -2,7 +2,7 @@
 
 <h2>Data Siswa</h2>
 <p>
-    <a href="tambah.php">Tambah</a>
+    <a class="tambah" href="tambah.php">Tambah</a>
 </p>
 <table>
     <thead>
@@ -10,6 +10,7 @@
         <th>Nama</th>
         <th>Kelas</th>
         <th>Jurusan</th>
+        <th>Aksi</th>
     </thead>
     <tbody>
 
@@ -19,14 +20,20 @@ include "config.php";
 $query = "select * from siswa";
 
 $hasil = mysqli_query($koneksi,$query);
+$no=1;
 while($data = mysqli_fetch_assoc($hasil)){?>
         <tr>
-            <td> <?=$data['id']?> </td>
+            <td> <?=$no?> </td>
             <td> <?=$data['nama']?> </td>
             <td> <?=$data['kelas']?> </td>
             <td> <?=$data['jurusan']?> </td>
+            <td>
+                <a class="tombol edit" href="edit.php?id=<?=$data['id']?>">Edit</a>
+                <a class="tombol hapus" href="hapus.php?id=<?=$data['id']?>">Hapus</a>
+            </td>
         </tr>
 <?php
+$no++;
 }
 ?>
 
@@ -47,6 +54,27 @@ while($data = mysqli_fetch_assoc($hasil)){?>
 
     th{
         background:#ccc;
+    }
+    a{
+        text-decoration:none;
+    }
+    .tambah{
+        background:blue;
+        color;white;
+        padding:3px;
+        font:weight:bold;
+    }
+    .tombol1{
+        color:black;
+        padding:3px;
+        font-size:12px;
+    }
+    .edit{
+        background:orange;
+    }
+    .hapus{
+
+        background:red;
     }
 </style>
 
