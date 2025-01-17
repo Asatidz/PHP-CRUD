@@ -57,6 +57,7 @@ $no++;
     }
     a{
         text-decoration:none;
+        border-radius:3px;
     }
     .tambah{
         background:blue;
