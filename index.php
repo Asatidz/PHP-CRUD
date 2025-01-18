@@ -72,10 +72,12 @@ $no++;
     }
     .edit{
         background:orange;
+        color:black;
     }
     .hapus{
 
         background:red;
+        color:black;
     }
 </style>
 
