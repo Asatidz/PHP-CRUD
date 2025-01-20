@@ -6,6 +6,7 @@
         <input type="text" name="nama" id="nama" required>
         <p>Kelas</p>
         <select name="kelas" id="kelas" required>
+            
 
             <option value=""> -Pilih Kelas- </option>
             <option value="10">10</option>
